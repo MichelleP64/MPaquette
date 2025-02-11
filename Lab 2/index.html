@@ -30,6 +30,15 @@
         </header>
         <main>
             <h1>Welcome to MichelleP's Website</h1>
+
+            <a href="path/to/your/full-size-image.jpg">
+                <picture>
+                    <source srcset="path/to/your/image-300.jpg" media="(min-width: 500px)">
+                    <source srcset="path/to/your/image-150.jpg" media="(max-width: 500px)">
+                    <img src="path/to/your/image-150.jpg" alt="Thumbnail Image">
+                </picture>
+            </a>
+
             <p>I’ve worked as an English as a Second Language teacher for the past 11 years. I love teaching, but due to
                 the uncertainty of working as an independent contractor,<br>I decided it was time for a change and chose
                 to pursue a long-time dream to return to school for computer programming this fall. In the early 1990’s
@@ -44,10 +53,14 @@
             <section>
                 <h2>My Favorite Things</h2>
                 <a href="https://linkinpark.com/">
-                    <img src="path/to/your/image/Logo1.png" alt="Linkin Park logo">
+                    <figure><img src="path/to/your/image/Logo1.png" alt="Linkin Park logo">
+                        <figcaption>Linkin Park</figcaption>
+                    </figure>
                 </a>
                 <a href="https://worldofwarcraft.blizzard.com/en-us/">
-                    <img src="path/to/your/image/Logoogo.png" alt="World of Warcraft logo">
+                    <figure><img src="path/to/your/image/Logoogo.png" alt="World of Warcraft logo">
+                        <figcaption>World of Warcraft</figcaption>
+                    </figure>
                 </a>
                 <p>Music has always been a huge part of my life. Metal, rock and SKA are my preferred genres. I love
                     Linkin Park (old and new), Iron Maiden, Dio, Bad Religion to name a few.<br> World of Warcraft is my
@@ -73,11 +86,32 @@
                     <cite>by <span class="author">Natsume Soseki</span></cite>
                 </p>
             </section>
+            <section>
+                <h3>Public Domain Audiobook</h3>
+                <audio controls>
+                    <source src="https://librivox.org/memoir-of-jane-austen-by-james-austen-leigh/" type="audio/mpeg">
+                    Your browser does not support the audio element. You can <a
+                        href="https://www.example.com/audio-file.mp3">download the audio file here</a>.
+                </audio>
+            </section>
+            <section>
+                <h3>YouTube Video</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rdkPsp6HIfA?si=aKe5jI-BVDWqA6h2"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
         </main>
         <footer>
             <hr>
             <blockquote>“Nothing prepares us for this. Everything prepares us for this.”</blockquote>
             <cite>&mdash;<span class="author">R. W. Trommer</span></cite>
+
+            <picture>
+                <source srcset="images/sc-logo.svg" type="image/svg+xml">
+                <img src="images/sc-logo.png" srcset="images/sc-logo@1.5x.png 1.5x, images/sc-logo@2x.png 2x"
+                    alt="Sault College Logo" width="70">
+            </picture>
         </footer>
         <p>&copy; 2021 <a href="mailto:24052610@saultcollege.ca?subject=Message%20from%20CSD112%20Website">Send
                 Email</a></p>
